@@ -1,7 +1,8 @@
 from aqi_forecast import fetch_future_air_data
 import plotly.express as px
 import streamlit as st
-import joblib
+# import joblib
+import pickle
 import numpy as np
 
 st.title("AQI Prediction")
@@ -70,7 +71,7 @@ def compare_aqi(predicted_aqi):
         st.error("AQI is exceeding 400 is highly unacceptable to human - can lead to premature death")
         st.markdown("---")
 
-model = joblib.load("aqi_rf.pkl")
+model = pickle.load(open("aqi_rf.pkl", 'rb'))
 
 
 
