@@ -1,10 +1,8 @@
 from datetime import datetime
-import geocoder
 from geopy.geocoders import Nominatim
 import requests
 import pandas as pd
 from datetime import date, timedelta
-import matplotlib.pyplot as plt
 
 ts = int("1284101485")
 

@@ -1,7 +1,6 @@
 from aqi_forecast import fetch_future_air_data
 import plotly.express as px
 import streamlit as st
-import pandas as pd
 import joblib
 import numpy as np
 
