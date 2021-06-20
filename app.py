@@ -191,7 +191,8 @@ if city:
                 compare_aqi(predicted_aqi)
                 plot_air_data(pre_data_fourth, air_content_to_show)
         else:
-            st.error("Please enter a valid city name")
+#             st.error("Please enter a valid city name")
+            pass
 
 
 
