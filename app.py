@@ -5,7 +5,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-st.title("AQI Prediction")
+st.title("AQI Prediction(A project by Toufiq Rahatwilkar)")
 st.markdown("---")
 st.markdown("#")
 from datetime import date, timedelta
