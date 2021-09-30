@@ -1,7 +1,6 @@
 from aqi_forecast import fetch_future_air_data
 import plotly.express as px
 import streamlit as st
-# import joblib
 import pickle
 import numpy as np
 
@@ -15,7 +14,6 @@ def plot_air_data(data,air_contents):
     Plots air content wrt time
     """
     st.info("💡 All the air contents are in micro-gram per meter-cube")
-    # for air_content in [air_contents]:
     for air_content in air_contents:
         
         st.subheader(f"{air_content} (µg / m^3) vs time")
@@ -26,8 +24,6 @@ def plot_air_data(data,air_contents):
         )
         st.plotly_chart(fig)
         st.markdown("---")
-
-# co,no,no2,o3,so2,pm2_5,pm10,nh3
 
 def air_content_mean(data):
     """
@@ -191,7 +187,6 @@ if city:
                 compare_aqi(predicted_aqi)
                 plot_air_data(pre_data_fourth, air_content_to_show)
         else:
-#             st.error("Please enter a valid city name")
             pass
 
 
